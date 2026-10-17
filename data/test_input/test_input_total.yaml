@@ -1,0 +1,19 @@
+tests:
+  - input: # example from LAFAN1
+      - motion_dir: ../data/raw/npy
+        motion_name: ground1_subject5
+        start_idx: 2697
+        end_idx: 2714
+      - motion_dir: ../data/raw/npy
+        motion_name: jumps1_subject5
+        start_idx: 6760
+        end_idx: 6777
+  - input: # example from LAFAN1
+      - motion_dir: ../data/raw/npy
+        motion_name: mirrored_walk1_subject2
+        start_idx: 4323
+        end_idx: 4340
+      - motion_dir: ../data/raw/npy
+        motion_name: mirrored_fightAndSports1_subject4
+        start_idx: 5537
+        end_idx: 5554

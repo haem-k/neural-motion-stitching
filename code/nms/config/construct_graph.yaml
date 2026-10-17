@@ -1,0 +1,21 @@
+vqvae_train_config_dir: ../result/vqvae/cluster_construction
+vqvae_train_config_name: vqvae_train
+load_ckpt_name: ""
+
+file_split_path: ../data/file_splits.yaml
+npy_motion_dir: ../data/raw/npy
+skel_path: ../data/character/ybot.bvh
+
+# Graph - weights for A*
+w_root_height: 1
+w_root_orient: 1
+w_root_trans_disp: 0.5
+w_root_ang_disp: 0.5
+w_joint_pos_root_rel: 0.0
+w_joint_trans_disp: 0.0
+w_code: 0.2
+
+# options 1
+precompute: true # if true, precompute all cost, heu with all weights combined
+
+

@@ -1,0 +1,77 @@
+character:
+  name: ybot
+  total_joint:
+    - Hips
+    - Spine
+    - Spine1
+    - Spine2
+    - Neck
+    - Head
+    - LeftShoulder
+    - LeftArm
+    - LeftForeArm
+    - LeftHand
+    - RightShoulder
+    - RightArm
+    - RightForeArm
+    - RightHand
+    - RightUpLeg
+    - RightLeg
+    - RightFoot
+    - RightToeBase
+    - LeftUpLeg
+    - LeftLeg
+    - LeftFoot
+    - LeftToeBase
+fps: 60
+motion:
+  root_height:
+    dim: 1
+    joint:
+      - Hips
+    weight:
+      null
+  root_orient:
+    dim: 6
+    joint:
+      - Hips
+    weight:
+      null
+  root_trans_disp:
+    dim: 3
+    joint:
+      - Hips
+    weight:
+      null
+  root_ang_disp:
+    dim: 6
+    joint:
+      - Hips
+    weight:
+      null
+  joint_pos_root_rel:
+    dim: 3
+    joint:
+      - LeftShoulder
+      - LeftHand
+      - RightShoulder
+      - RightHand
+      - RightLeg
+      - RightFoot
+      - LeftLeg
+      - LeftFoot
+    weight:
+      null
+  joint_trans_disp:
+    dim: 3
+    joint:
+      - LeftShoulder
+      - LeftHand
+      - RightShoulder
+      - RightHand
+      - RightLeg
+      - RightFoot
+      - LeftLeg
+      - LeftFoot
+    weight:
+      null

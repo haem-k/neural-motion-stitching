@@ -1,0 +1,16 @@
+dataset_name: vqvae_dataset
+datarep_name: vqvae_datarep
+
+dataset_dir: ../data/dataset/vqvae
+datarep_dir: ./nms/datarep
+skel_path: ../data/character/ybot.bvh
+
+convert_bvh: false
+bvh_motion_dir: /host_data/Haemin/NeuralMotionStitching_2/data/raw/bvh/lafan_ybot
+npy_motion_dir: ../data/raw/npy
+file_split_path: ../data/file_splits.yaml
+
+block_nof: 16
+slide_nof: 8
+
+seed: 118

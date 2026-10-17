@@ -1,0 +1,37 @@
+exp_name: cluster_construction
+dataset_name: vqvae_dataset
+datarep_name: vqvae_datarep
+dataset_dir: ../data/dataset/vqvae
+result_dir: ../result/vqvae
+tensorboard_dir: ../tensorboard/vqvae
+archi:
+  hidden_dim: 128
+  num_resnet: 1
+  codebook_size: 2048
+  codebook_dim: 64
+  distance: cos
+  anchor: probrandom
+  beta: 0.25
+  w_contras: 1.0
+  contras_loss: true
+  input_len: 16
+  input_dim: 64
+seed: 118
+epoch: 100
+batch_size: 64
+lr: 0.0001
+weight_decay: 0.01
+w_pos: 1.5
+w_recon: 0.01
+w_root_height: 1.0
+w_root_orient: 1.0
+w_root_trans_disp: 1.0
+w_root_ang_disp: 1.0
+w_joint_pos_root_rel: 1.0
+w_joint_trans_disp: 1.0
+save_ckpt_freq: 50
+val_export: false
+input_dim: 64
+output_dim: 64
+input_len: 16
+k_candidate: 3

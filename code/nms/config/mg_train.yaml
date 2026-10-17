@@ -1,0 +1,48 @@
+exp_name: motion_generator
+
+dataset_name: mg_dataset
+out_datarep_name: mg_gt_datarep
+
+dataset_dir: ../data/dataset/mg
+result_dir: ../result/mg
+tensorboard_dir: ../tensorboard/mg
+skel_path: ../data/character/ybot.bvh
+lengths: [3, 4, 5, 6, 7, 8]
+
+archi:
+  n_head: 8
+  hidden_dim: 512
+  dropout: 0
+  n_layers: 6
+
+seed: 118
+epoch: 100
+batch_size: 64
+num_workers: 4
+lr: 0.0001
+iter_warmup_ratio: 0.01
+gamma: 0.9
+weight_decay: 0.01
+T_mult: 1
+
+# Loss
+use_dest: true
+use_adv: true
+
+w_trans: 1.0
+w_fk: 1.0
+w_dest: 1.0
+w_adv: 2
+
+# Disc
+disc:
+  update_freq: 1
+  start_epoch: 0
+  joint_list: ["Hips", "Head", "LeftShoulder", "LeftHand", "RightShoulder", "RightHand", "RightLeg", "RightFoot", "LeftLeg", "LeftFoot"]
+  hidden_dim: 256
+  head: 1
+  lr_disc: 0.00005
+  w_gp: 10
+
+# Save
+save_ckpt_freq: 10

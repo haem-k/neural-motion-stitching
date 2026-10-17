@@ -1,0 +1,32 @@
+exp_name: nms
+skel_path: ../data/character/ybot.bvh
+combine: false
+control: false
+blend: false
+single_frame: false
+save_bvh: true # additionally save generated results as BVH files
+
+# Cluster
+vqvae_train_config_dir: ../result/vqvae/cluster_construction
+vqvae_train_config_name: vqvae_train
+vqvae_ckpt_name: ""
+load_precomputed: false # if false, apply weights in current file. if true, apply weights set when precomputing costs
+
+# Graph 
+w_root_height: 1
+w_root_orient: 1
+w_root_trans_disp: 0.5
+w_root_ang_disp: 0.5
+w_joint_pos_root_rel: 0.0
+w_joint_trans_disp: 0.0
+w_code: 0.2
+w_control: 3 # used when control==true
+
+# Motion Generator
+mg_train_config_dir: ../result/mg/motion_generator
+mg_train_config_name: mg_train
+mg_ckpt_name: ""
+
+test_input_name: test_input_total
+test_input_dir: ../data/test_input
+test_result_dir: ../result/nms

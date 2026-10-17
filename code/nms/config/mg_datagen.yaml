@@ -1,0 +1,19 @@
+dataset_name: mg_dataset
+gt_datarep_name: mg_gt_datarep
+guide_datarep_name: vqvae_datarep
+target_datarep_name: mg_gt_datarep
+
+dataset_dir: ../data/dataset/mg
+datarep_dir: ./nms/datarep
+skel_path: ../data/character/ybot.bvh
+
+max_window_nob: 8
+file_split_path: ../data/file_splits.yaml
+npy_motion_dir: ../data/raw/npy
+
+vqvae_train_config_dir: ../result/vqvae/cluster_construction
+vqvae_train_config_name: vqvae_train
+vqvae_ckpt_name: ""
+
+stats: true
+seed: 118
