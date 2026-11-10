@@ -154,10 +154,22 @@ We thank all researchers who shared their code. This project would not have been
 ## 📜 Citation
 
 ```bibtex
-@article{kim2026length,
-  title={Length-varying Neural Motion Stitching via Cluster Transition Graph},
-  author={Kim, Haemin and Nam, Junghyun and Hong, Seokhyeon and Tan, Vanessa and Noh, Junyong},
-  journal={arXiv preprint arXiv:2609.37167},
-  year={2026}
+@article{10.1145/3842516,
+    author = {Kim, Haemin and Nam, Junghyun and Hong, Seokhyeon and Tan, Vanessa and Noh, Junyong},
+    title = {Length-varying Neural Motion Stitching via Cluster Transition Graph},
+    year = {2026},
+    issue_date = {December 2026},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {45},
+    number = {6},
+    issn = {0730-0301},
+    url = {https://doi.org/10.1145/3842516},
+    doi = {10.1145/3842516},
+    journal = {ACM Trans. Graph.},
+    month = nov,
+    articleno = {240},
+    numpages = {17},
+    keywords = {transition generation, motion stitching, motion clustering, motion generation}
 }
 ```
